@@ -2,6 +2,16 @@
 
 本指南专为 Kali Linux 环境定制，涵盖虚拟机配置、环境检查、镜像部署、渲染修复及启动流程，旨在解决常见的闪退、黑屏及 `Failed to get service` 报错问题。
 
+## 0. **所需文件清单**
+
+| 文件名                                                      | 类型       | 说明                                                         | 官方来源                                                     |
+| ----------------------------------------------------------- | ---------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| `kali-linux-2026.2-installer-amd64.iso`                     | 🖥️ 系统镜像 | Kali Linux 2026.2 版本的官方 64位安装镜像。                  | [Kali Linux 官网下载页](https://www.kali.org/get-kali/#kali-installer-images) |
+| `VMware虚拟机文件.rar`                                      | 📦 压缩包   | 已配置好环境的 Kali Linux 虚拟机完整备份包。                 | 自行打包备份                                                 |
+| `lineage-20.0-20260403-VANILLA-waydroid_x86_64-system.zip`  | 🤖 安卓系统 | Waydroid 的 LineageOS 20.0 纯净版 (Vanilla) x86_64 系统镜像。 | [Waydroid 官方项目页](https://sourceforge.net/projects/waydroid/) |
+| `lineage-20.0-20260403-MAINLINE-waydroid_x86_64-vendor.zip` | ⚙️ 核心组件 | Waydroid 的 LineageOS 20.0 主线版 (Mainline) x86_64 厂商/底层组件包。 | [Waydroid 官方项目页](https://sourceforge.net/projects/waydroid/) |
+| `lineage-20.0-20260403-GAPPS-waydroid_x86_64-system.zip`    | 📱 安卓系统 | Waydroid 的 LineageOS 20.0 预装版 (GApps) x86_64 系统镜像。  | [Waydroid 官方项目页](https://sourceforge.net/projects/waydroid/) |
+
 ## 1. 虚拟机配置建议
 
 若使用 VMware 或 VirtualBox 运行 Kali，请务必按以下标准配置，否则 Waydroid 无法正常工作。
