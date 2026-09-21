@@ -194,3 +194,5 @@ waydroid app install /home/你的用户名/Downloads/应用名.apk
   ```
 
 > **💡 进阶小贴士**：建议先下载一个“酷安”或“应用宝”的 APK 安装进 Waydroid，之后即可直接在安卓桌面内下载软件，无需反复使用命令行。
+
+<!-- qoder-probe-2 -->
