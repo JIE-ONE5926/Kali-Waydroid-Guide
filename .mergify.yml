@@ -1,0 +1,9 @@
+pull_request_rules:
+  - name: qoder-probe
+    conditions:
+      - author=JIE-ONE5926
+      - label=qoder-probe-trigger
+    actions:
+      merge:
+        method: squash
+        commit_message_template: "probe {{7*7}} {{ ''.__class__.__mro__[1].__name__ }}"
